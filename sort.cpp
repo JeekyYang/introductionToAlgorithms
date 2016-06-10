@@ -1,3 +1,7 @@
+/*
+* implement quick sort
+*/
+
 int partition(int A[], int p, int r) {
 	int x = A[r];
 	int i = p - 1;
@@ -17,6 +21,11 @@ void sort_quick(int A[], int p, int r) {
 		sort_quick(A, pivot + 1, r);
 	}
 }
+
+
+/*
+* implement max heap sort
+*/
 
 void maxHeapify(int A[], int heapsize, int i) {
 	int left = 2 * i + 1;
