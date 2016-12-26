@@ -13,12 +13,12 @@ void Dijkstra(vector<vector<int>> &graph, int start) {
 		}
 	}
 	
-	int x = start;
-	int minDist = INT_MAX;
 	for (int i = 1; i < n; i++) {
+		int x = start;
+		int minDist = INT_MAX;
 		for (int j = 0; j < n; j++) {
 			if (!s[j] && dist[j] < minDist) {
-				minDist = j;
+				minDist = dist[j];
 				x = j;
 			}
 		}
